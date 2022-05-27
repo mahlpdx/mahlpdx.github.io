@@ -13,25 +13,28 @@
   </head>
   <body class="container">
     <header class="row">
-      <div class="site-title col-3" rel="author">Drew Mahler</div>
-      <nav>
-          <ul>
-            <li class="col-1" role="presentation" class="active"><a href="#">Home</a></li>
-            <li class="col-1" role="presentation"><a href="#">Profile</a></li>
-            <li class="col-1" role="presentation"><a href="#">Messages</a></li>
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="home.html">Drew Mahler</a>
+        <div class="navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
           </ul>
-        </nav>
+        </div>
+      </nav>
     </header>
     <main>
-      <section class="about">
-      <div class ="row"></div>
-        <div class="col-4">
-          <img class="myphoto img-fluid" src="ME.jpeg" alt="Drew Mahler drinking wine in a wine bar"></img>
-          <p>Hi! My name is Drew Mahler and I am a Master's student in Computer Science at Portland State University. 
+      <section class="about py-3 border-bottom">
+        <div class="row">
+          <div class="col-sm-6 d-flex align-items-center">
+            <img class="img-fluid rounded-circle" src="ME.jpeg" alt="Drew Mahler drinking wine in a wine bar"></img>
+          </div>
+          <div class="col-sm-6 d-flex align-items-center">
+            <p>Hi! My name is Drew Mahler and I am a Master's student in Computer Science at Portland State University. 
             Previously, I worked as a Data Analyst and Data Scientist at a consulting firm in Portland. 
-            I currently work part-time as a server at a Mexican restaurant.
-            In my free time I love to read, cook, exercise, and soak in all of Oregon's natural beauty.
-          </p>
+            </p>
+          </div>
         </div>
       </section>
     </main>
