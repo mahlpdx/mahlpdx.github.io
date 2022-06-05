@@ -72,7 +72,7 @@
           </div>
         </div>
       </section>
-      <section id="resume" class="align-items-center">
+      <section id="resume" class="justify-content-center border-bottom">
         <div class="row">
           <h1 class="col-sm-8">Resume</h1>
         </div>
@@ -82,15 +82,31 @@
           </div>
         </div> 
       </section>
+      <div class="row">
+        <h1 class="col-sm-8">Contact Me!</h1>
+      </div>
       <section id="contact" class="align-items-center">
-        <div class="row">
-          <h1 class="col-sm-8">Contact</h1>
-        </div>
-        <div class="row d-flex justify-content-center">
-          <h2><a href="https://www.linkedin.com/in/andrew-mahler/">Linkedin</a>
-          <a href="andrew.h.mahler@gmail.com">Email</a></h2>
-        </div>
+        <form class="email-me">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="subject" class="form-control" id="subject">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mt-2 mb-4">Submit</button>
+        </form>
       </section>
+      <footer class="page-footer bg-dark text-white">
+        <div class="footer-copyright text-center py-3">© 2022 Copyright:
+          <a>Drew Mahler</a>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
