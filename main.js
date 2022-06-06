@@ -5,20 +5,23 @@ let projects_data = [
     {
         "title":"Image Editor",
         "icon": "https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-1024.png",
-        "description": "Image editing tool developed in my Computer Graphics course",
-        "link": "https://github.com/maudul3/CS547-Project-1"
+        "description": "Image editing tool developed to apply filters and dithering to images",
+        "alt": "icon of a mountain and sun",
+        "link": "https://github.com/mahlpdx/Image-Editor"
     },
     {
-        "title":"n-Shot Learning",
+        "title":"N-Shot Learning for NLP",
         "icon": "https://cdn-icons-png.flaticon.com/512/2103/2103611.png",
-        "description": "n-Shot Learning algorithm for object classification",
-        "link": "https://github.com/lacedwithcode/urban-octo-parakeet"
+        "description": "N-Shot Learning algorithm developed for sentiment analysis",
+        "alt": "icon of a head receiving information",
+        "link": "https://github.com/mahlpdx/n-shot-learning-sentiment/tree/master"
     },
     {
-        "title":"Image Editor",
-        "icon": "https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-1024.png",
-        "description": "Image editing tool developed in my Computer Graphics course",
-        "link": "https://github.com/maudul3/CS547-Project-1"
+        "title":"Wordle AI Solver",
+        "icon": "https://play-lh.googleusercontent.com/_9-9siVoJ6yCHLU3ttjnQJC0_WbUAKtsgLUmPFzV22GGQZZW9OaCuKtcYFx4H1vgkGI",
+        "description": "AI developed to play the Wordle game. Wins the game 97% of the time.",
+        "alt": "icon of the Wordle game",
+        "link": "https://github.com/mahlpdx/Wordle-AI-Solver"
     }
 ]
 
@@ -37,9 +40,11 @@ for (let i = 0; i < projects_data.length; i++) {
     let card_img = document.createElement("img");
     card_img.classList.add("m-1")
     card_img.src = projects_data[i].icon
+    card_img.alt = projects_data[i].alt
     let card_body = document.createElement("div");
     card_body.classList.add("card-body");
-    let card_title = document.createElement("h5");
+    let card_title = document.createElement("p");
+    card_title.style.fontWeight = "bold";
     card_title.innerText = projects_data[i].title;
     card_title.classList.add("card-title");
     let card_text = document.createElement("p");
@@ -62,59 +67,3 @@ for (let i = 0; i < projects_data.length; i++) {
 }
 
 projects.appendChild(outermost_div)
-
-// Handle the contact form submission
-/*let form = document.querySelector("form");
-
-form.addEventListener("submit", handleSubmit);
-
-function handleSubmit(event) {
-  event.preventDefault();
-
-  // Empty form check
-  if (
-    !(
-      form.elements.username.value.length ||
-      form.elements.password.value.length ||
-      form.elements.email.value.length ||
-      form.elements.radio1.checked ||
-      form.elements.radio2.checked ||
-      form.elements.date1.value.length
-    )
-  ) {
-    console.warn("You must enter some data to submit this form");
-    return;
-  }
-
-  console.group("========= FORM SUBMISSION =========");
-  // Username
-  if (form.elements.username.value.length) {
-    console.log("Username:", form.elements.username.value);
-  } else {
-    console.log("Username: no submission");
-  }
-
-  // Email
-  if (form.elements.email.value.length) {
-    console.log("Email:", form.elements.email.value);
-  } else {
-    console.log("Email: no submission");
-  }
-
-  // Newsletter
-  if (form.elements.radio1.checked) {
-    console.log("Newsletter: Yes");
-  } else if (form.elements.radio2.checked) {
-    console.log("Newsletter: No");
-  } else {
-    console.log("Newsletter: no submission");
-  }
-
-  // Date
-  if (form.elements.date1.value.length) {
-    console.log("Date:", form.elements.date1.value);
-  } else {
-    console.log("Date: no submission");
-  }
-  console.groupEnd();
-}*/
